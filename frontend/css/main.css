@@ -1,0 +1,147 @@
+body {
+    --color-background: #E5E5E5;
+    --color-titles: #FCA311;
+    background-color:var(--color-background);
+    text-align: center;
+}
+h2 {
+    color: var(--color-titles);
+}
+a {
+    color: black;
+}
+.button {
+    color:white;
+    background-color: #14213D;
+    padding: 10px;
+    font-size: 14px;
+}
+.btn-search {
+    padding: 10px;
+    font-size: 14px;
+}
+select {
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    margin-left: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    padding-inline-start: 0;
+}
+.orange {
+    color: var(--color-titles);
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+input {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px black;
+}
+textarea, .no-profile, .has-profile {
+    box-shadow: 0px 2px 8px black;
+}
+input[type="checkbox"] {
+    box-shadow: none;
+}
+#tags {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag {
+    background-color: var(--color-titles);
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+.checkboxes, .check-field {
+    display: flex;
+    flex-wrap: wrap;
+}
+.check-field {
+    margin-right: 10px;
+}
+.right {
+    text-align: right;
+}
+.form-member label {
+    display: block;
+}
+#members img, #member img {
+    width: 150px;
+    border-radius: 50%;
+    
+}
+#members>div>div, #members>a>div>div, #member>div>div {
+    display: flex;
+    justify-content: center;
+}
+.no-profile {
+    background-color: #999999;
+    margin-top: 20px;
+}
+.has-profile {
+    background-color: white;
+}
+.no-profile, .has-profile {
+    margin-bottom: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ml {
+    margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+    p span, p a {
+        display: block;
+    }
+    p a {
+        width: 60px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-width {
+        display: block;
+        width: 80px;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+    .right {
+        text-align: center;
+    }
+    .btn-deconnexion {
+        display: inline;
+    }
+    #member>div>div {
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 500px) {
+    .member-form-center {
+        display: flex;
+        justify-content: space-around;
+    }
+}    

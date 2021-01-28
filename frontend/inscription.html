@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Site annuaire - formulaire d'inscription</title>
+</head>
+<body>
+    <h2>Inscription</h2>
+    <form action="../backend/inscription.php" method="POST">
+        <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+        <br>
+        <input type="text" name="lastname" id="lastname" placeholder="Nom">
+        <br>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br>
+        <input type="text" name="number" id="number" placeholder="Taper adh-2045- + votre numéro">
+        <br>
+        <input type="text" name="address" id="addres" placeholder="Adresse">
+        <br>
+        <input type="text" name="zipcode" id="zipcode" placeholder="Code postal">
+        <br>
+        <input type="text" name="city" id="city" placeholder="Ville">
+        <br>
+        <input type="password" name="password" id="password" placeholder="Mot de passe">
+        <br>
+        <div class="buttons">
+            <input type="submit" class="button btn-width" value="Inscription" />
+            <a href="index.html" class="button btn-width">Connexion</a>
+        </div>
+        
+    </form>
+</body>
+</html>
