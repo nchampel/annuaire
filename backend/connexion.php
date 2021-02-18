@@ -30,7 +30,7 @@
         exit();
         
         
-        http_response_code(200);
+        //http_response_code(200);
     } else { // Sinon, on redirige vers index.html pour qu'il retente de se connecter. 
         http_response_code(401); // Non autorisé
         header('Location: ../frontend/index.html');

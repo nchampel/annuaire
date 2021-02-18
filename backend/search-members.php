@@ -6,7 +6,8 @@
     include('db.php');
     $connexion = new PDO($url, $userBDD, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $rqt = "SELECT * FROM adherents LEFT JOIN profils ON adherents.adherent_id = profils.adherent_id WHERE pseudo LIKE :search OR nom LIKE :search OR prenom LIKE :search";
+    $rqt = "SELECT * FROM adherents LEFT JOIN profils ON adherents.adherent_id = profils.adherent_id 
+    WHERE pseudo LIKE :search OR nom LIKE :search OR prenom LIKE :search";
     try {
         $statement = $connexion->prepare($rqt);
         $word = "%" . $search . "%";

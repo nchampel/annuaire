@@ -10,6 +10,9 @@ h2 {
 a {
     color: black;
 }
+.orange {
+    color: var(--color-titles);
+}
 .button {
     color:white;
     background-color: #14213D;
@@ -34,9 +37,7 @@ li {
 ul {
     padding-inline-start: 0;
 }
-.orange {
-    color: var(--color-titles);
-}
+
 input[type="submit"] {
     border: none;
     cursor: pointer;
